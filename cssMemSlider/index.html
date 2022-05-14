@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/cssMemSlider/style.css">
+    <link rel="stylesheet" href="cssMemSlider/style.css">
     <title>cssMemSlider</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="slider__wrap">
+            <input type="radio" id="r1" name="s" checked>
+            <input type="radio" id="r2" name="s">
+            <input type="radio" id="r3" name="s">
+            <input type="radio" id="r4" name="s">
+            <div class="wrapper_img">
+              <div class="slider_img">
+                <div class="slide s1"><img src="cssMemSlider/img/img1.jpg" alt=""></div>
+                <div class="slide s2"><img src="cssMemSlider/img/img2.jpg" alt=""></div>
+                <div class="slide s3"><img src="cssMemSlider/img/img3.jpg" alt=""></div>
+                <div class="slide s4"><img src="cssMemSlider/img/img4.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="wrapper_text">
+              <div class="slider_text">
+                <p class="slide s1">До дедлайна осталось 3 часа</p>
+                <p class="slide s2">Итоговая по кросс чеку 100</p>
+                <p class="slide s3">Запушил не в ту ветку</p>
+                <p class="slide s4">Использую последнюю попытку в тесте</p>
+              </div>
+            </div>
+            <div class="slider_nav">
+              <label class="n1" for="r1"></label>
+              <label class="n2" for="r2"></label>
+              <label class="n3" for="r3"></label>
+              <label class="n4" for="r4"></label>
+            </div>
+          </div>
+    </div>
 </body>
 </html>
