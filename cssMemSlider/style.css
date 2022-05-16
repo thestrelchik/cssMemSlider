@@ -13,9 +13,10 @@
   }
   
   .container {
-    width: 500px;
+    width: 25em;
     height: 400px;
     margin: 20px auto;
+    
   }
   .slide img {
       width: 100%;
@@ -28,6 +29,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    
   }
     input {
     display: none;
@@ -42,7 +44,6 @@
   .wrapper_text {
     width: 100%;
     overflow: hidden;
-    display: flex;
   }
   
   .slider_img,
@@ -127,3 +128,51 @@
   }
   
   
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 8px;
+  }
+  .slider_nav {
+    position: static;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .slider__wrap {
+    display: flex;
+  }
+  .wrapper_text {
+    order: 1;
+  }
+  .wrapper_text {
+    width: 1600px;
+    display: flex;
+  }
+  .slide img {
+    width: 400px;
+  }
+  .slider_text .slide {
+    width: 400px;
+  }
+  #r1:checked ~ .wrapper_img .slider_img,
+  #r1:checked ~ .wrapper_text .slider_text {
+    transform: translateX(0);
+  }
+  
+  #r2:checked ~ .wrapper_img .slider_img,
+  #r2:checked ~ .wrapper_text .slider_text {
+    transform: translateX(-400px);
+  }
+  
+  #r3:checked ~ .wrapper_img .slider_img,
+  #r3:checked ~ .wrapper_text .slider_text {
+    transform: translateX(-800px);
+  }
+  
+  #r4:checked ~ .wrapper_img .slider_img,
+  #r4:checked ~ .wrapper_text .slider_text {
+    transform: translateX(-1200px);
+  }
+
+}
+
